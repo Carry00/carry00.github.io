@@ -83,14 +83,6 @@
     });
   };
 
-  /*优化数学公式渲染*/
-  MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-        displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
-    }
-  })
-
   var __BLOG_CONFIG__ = window.__BLOG_CONFIG__ || {};
   var staticSrc = __BLOG_CONFIG__.staticSrc || "https://carry00.github.io/releases/";
   var staticVer = __BLOG_CONFIG__.staticVer || "20201020223150";
@@ -111,4 +103,3 @@
   };
   cnblogLoader(staticParam);
 })();
-
